@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PESUno</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="project.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="font-awesome.min.css">
+
+</head>
+<body id="myPage">
+
+<!-- Fest Navigation onclick -->
+<nav class="pro-sidenav pro-white pro-card-2 pro-animate-left" style="display:none;z-index:2" id="mySidenav">
+  <a href="javascript:void(0)" onclick="close()" class="pro-closenav pro-xxxlarge pro-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+      <a href="https://www.facebook.com/ATPESIT/">Aatmatrisha</a>
+	  <a href="pes.edu/theamateurscientist/">TAS</a>
+      <a href="http://www.epsilon.pes.edu/">Epsilon</a>
+      <a href="events.pes.edu/events/prakalpa-2016/">Prakalpa</a>
+      
+</nav>
+
+<!-- Top navigation -->
+<div class="pro-top">
+ <ul class="pro-navbar pro-theme-d2 pro-left-align">
+  <li class="pro-hide-medium pro-hide-large pro-opennav pro-right">
+    <a class="pro-hover-white pro-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="Final_homepage.html" class="pro-teal"><i class="fa fa-home pro-margin-right"></i>PESUno</a></li>
+  <li class="pro-hide-small"><a href="about.html" class="pro-hover-white">About</a></li>
+  <li class="pro-hide-small"><a href="http://www.pes.edu/" class="pro-hover-white">PESU</a></li>
+ 
+  <li class="pro-hide-small"><a href="fests.html" class="pro-hover-white">Fests</a></li>
+  <li class="pro-hide-small pro-dropdown-hover">
+    <a href="clubs.html" title="Notifications">Clubs <i class="fa fa-caret-down"></i></a>
+    <div class="pro-dropdown-content pro-white pro-card-4">
+     <a href="clubs.html">IEEE</a>
+	  <a href="clubs.html">IET</a>
+      <a href="clubs.html">Ecell</a>
+      <a href="clubs.html">Pulse</a>
+      <a href="clubs.html">......</a>
+    </div>
+  </li>
+   <li class="pro-hide-small"><a href="gallery.html" class="pro-hover-white">Gallery</a></li>
+   <li class="pro-hide-small"><a href="#contact" class="pro-hover-white">Contact Us</a></li>
+  <li class="pro-hide-small pro-right"><a href="http://www.google.co.in" class="pro-hover-teal" title="Search"><i class="fa fa-search"></i></a></li>
+  <li class="pro-hide-small pro-right"><a href="signIn.html" class="pro-hover-teal" title="Login">Login</a></li>
+  <li class="pro-hide-small pro-right"><a href="login.html" class="pro-hover-teal" title="Sign Up">Sign Up</a></li>
+ </ul>
+
+  
+</div>
+
+<!-- PESUno button -->
+<div class="pro-display-container pro-animate-opacity">
+  <img src="Images/front.jpg" alt="back" style="width:100%;min-height:350px;max-height:800px;">
+  <div class="pro-container pro-display-middle pro-margin-bottom">
+    <button style="text-align:center" onclick="document.getElementById('id01').style.display='block'" class=" pro-btn pro-xlarge pro-theme pro-hover-teal" title="PESUno">We Are...</button>
+  </div>
+</div>
+
+<!-- pop up -->
+<div id="id01" class="pro-modal">
+  <div class="pro-modal-content pro-card-8 pro-animate-top">
+    <header class="pro-container pro-teal">
+      <span onclick="document.getElementById('id01').style.display='none'" class="pro-closebtn"><i class="fa fa-remove"></i></span>
+      <h4>An Event management group, Meant for creative Sudents to know about the Events being held on campus.</h4>
+      <h5>Sign up to know more about your favorite clubs and activites asap!!<i class="fa fa-smile-o"></i></h5>
+    </header>
+    <div class="pro-container">
+      <p>Cool huh?</p>
+      <p>Go to <a class="pro-btn" href="about.html">About</a> to learn more!</p>
+    </div>
+    <footer class="pro-container pro-teal">
+      <p>PESUno</p>
+    </footer>
+  </div>
+</div>
+`
+
+
+
+<br />
+
+<!-- Image Slideshow -->
+<h2 class="pro-center">Image Gallery</h2>
+
+<div style="color:grey" class="pro-content pro-display-container">
+  <img class="mySlides pro-animate-right" src="Images/s3.JPG" style="width:100% ; height:500px">
+  <img class="mySlides pro-animate-right" src="Images/s4.JPG" style="width:100%; height:500px">
+  <img class="mySlides pro-animate-right" src="Images/s1.JPG" style="width:100%; height:500px">
+  <img class="mySlides pro-animate-right" src="Images/s2.JPG" style="width:100%; height:500px">
+
+  <a class="pro-btn-floating pro-display-left" onclick="plusDivs(-1)">&#10094;</a>
+  <a class="pro-btn-floating pro-display-right" onclick="plusDivs(1)">&#10095;</a>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+<div class="pro-container" style="position:relative">
+  <a onclick="open()" class="pro-btn-floating-large pro-teal" style="position:absolute;top:-28px;right:24px;z-index:0;">
+  <i class="fa fa-plus"></i></a>
+</div>
+
+<!-- Events -->
+<div class="pro-row-padding pro-center pro-padding-64" id="pricing">
+    <h2>Events</h2>
+    <p>Select, Attend and participate in variety of events brought you by PES</p><br>
+    <div class="pro-third pro-margin-bottom">
+      <ul class="pro-ul pro-border pro-hover-shadow">
+        <li class="pro-theme">
+          <p class="pro-xlarge">TAS</p>
+        </li>
+        <li class="pro-padding-16"><b>Science Fest</b></li>
+        <li class="pro-padding-16"><b>Venue PES University</b></li>
+        <li class="pro-padding-16"><b>Date: 21/09/2016</b> </li>
+        
+        
+          
+          <span class="pro-opacity">Country's biggest science fest is here!. Showcase your Technical and science skills by creating innovative projects and participate in numerous sci-fi stuff</span>
+        </li>
+        <li class="pro-theme-l5 pro-padding-24">
+          <button class="pro-btn pro-teal pro-padding-large"><i class="fa fa-check"></i><a href="signIn.html">Know more</a></button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="pro-third pro-margin-bottom">
+      <ul class="pro-ul pro-border pro-hover-shadow">
+        <li class="pro-theme">
+          <p class="pro-xlarge">Roadies</p>
+        </li>
+        <li class="pro-padding-16"><b>Club Aatmatrisha</b></li>
+        <li class="pro-padding-16"><b>Venue Panini PES University</b></li>
+        <li class="pro-padding-16"><b>Date : 18/04/1017</b></li>
+       
+
+          
+          <span class="pro-opacity">Have you always dreamt of participating in the TV reality show roadies?? Well here's a chance for you!!This summer.... Brought you by Aatmatrisha</span>
+        </li>
+        <li class="pro-theme-l5 pro-padding-24">
+          <button class="pro-btn pro-teal pro-padding-large"><i class="fa fa-check"></i><a href="signIn.html">Participate</a></button>
+        </li>
+      </ul>
+    </div>
+
+   <div class="pro-third pro-margin-bottom">
+      <ul class="pro-ul pro-border pro-hover-shadow">
+        <li class="pro-theme">
+          <p class="pro-xlarge">Salim & sulaiman</p>
+        </li>
+        <li class="pro-padding-16"><b>Club Aatmatrisha</b> </li>
+        <li class="pro-padding-16"><b>Venue: PESU cricket ground</b></li>
+        <li class="pro-padding-16"><b>Date 01/01/2016</b></li>
+      
+          
+          <span class="pro-opacity">Well.. What do you know!!! the Indian Idols of music Industry are here, this summer, to Entertain you to the peak!! Don't Miss it!</span>
+        </li>
+        <li class="pro-theme-l5 pro-padding-24">
+          <button class="pro-btn pro-teal pro-padding-large"><i class="fa fa-check"></i><a href="signIn.html">Book Seats</a></button>
+        </li>
+      </ul>
+    </div>
+	<p style="text align:right"><a href="#log">And many more such events...(Login to see)</a></p><br>
+</div>
+
+<!-- Contact Us -->
+<div class="pro-container pro-padding-64 pro-theme-l5" id="contact">
+  <div class="pro-row">
+    <div class="pro-col m5">
+    <div class="pro-padding-16"><span class="pro-xlarge pro-border-teal pro-bottombar">Contact Us</span></div>
+    
+      <p><i class="fa fa-map-marker pro-text-teal pro-xlarge"></i>PES University, Bangalore</p>
+      <p><i class="fa fa-phone pro-text-teal pro-xlarge"></i>+91 9475628487</p>
+      <p><i class="fa fa-envelope-o pro-text-teal pro-xlarge"></i>pesuno@pes.edu</p>
+    </div>
+    <div class="pro-col m7">
+      <form class="pro-container pro-card-4 pro-padding-16 pro-white">
+      <div class="pro-group">
+        <label class="pro-label">Name</label>
+        <input class="pro-input" type="text">
+      </div>
+      <div class="pro-group">
+        <label class="pro-label">Email</label>
+        <input class="pro-input" type="text">
+      </div>
+      <div class="pro-group">
+        <label class="pro-label">Subject</label>
+        <input class="pro-input" type="text">
+      </div>
+      <button type="button" class="pro-btn pro-right pro-theme">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Google Maps -->
+<div id="googleMap" style="width:100%;height:420px;"></div>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(12.9348, 77.5371);
+
+function initialize() {
+var mapProp = {
+  center: myCenter,
+  zoom: 10,
+  scrollwheel: false,
+  draggable: true,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<!-- Footer -->
+<footer class="pro-container pro-padding-32 pro-theme-d1 pro-center">
+  <h4 align="center">Follow Us</h4>
+  <a class="pro-btn-floating pro-teal" href="https://www.facebook.com/" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="pro-btn-floating pro-teal" href="https://twitter.com/login?lang=en" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="pro-btn-floating pro-teal" href="https://plus.google.com/" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="pro-btn-floating pro-teal pro-hide-small" href="https://www.linkedin.com/uas/login" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="pro-tooltip pro-right">
+    <span class="pro-text pro-padding pro-teal pro-hide-small">Go To Top</span>
+    <a class="pro-btn pro-theme" href="#myPage"><span class="pro-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<!-- Script For Side Navigation -->
+<script>
+function open() {
+    var x = document.getElementById("mySidenav");
+    x.style.width = "300px";
+    x.style.textAlign = "center";
+    x.style.fontSize = "40px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+function close() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+
+</script>
+
+</body>
+</html>
+

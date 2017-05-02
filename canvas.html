@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="800" height="800"> </canvas>
+
+<script>
+
+var ele=document.getElementById("myCanvas");
+var ctx=ele.getContext("2d");
+ctx.lineWidth="2px";
+//ctx.strokeStyle="seagreen"; // for border
+
+//// x co ordinate, y co ordinate, width, height
+
+//ctx.fillStyle="#333333";
+//ctx.fillRect(10,10,100,150);
+//ctx.strokeStyle="red";
+//ctx.beginPath();
+//ctx.moveTo(40,40);
+//ctx.lineTo(100,100);
+//ctx.lineTo(40,200);
+//ctx.stroke(); // drawing the iine
+//ctx.LineTo(40,200);
+//ctx.stroke();
+//ctx.closePath();
+
+//ctx.lineTo(40,200);
+
+//ctx.stroke();
+
+//ctx.fillStyle="red";
+/*var lng=ctx.createRadialGradient(0,0,50,0,0,75);
+lng.addColorStop(0,'white');
+lng.addColorStop(0.5,'seagreen');
+ctx.fillStyle=lng;
+ctx.strokeRect(10,10,150,150);
+ctx.fillRect(10,10,150,150);
+
+ctx.fill();
+//ctx.stroke();
+
+
+//ctx.arc(250,250,150,0,Math.PI,false); // false for clockwise o and Math.PI are the initial and the end angkes
+
+// 25 and 250 are  the co ordinates of the center of the circle
+// 150 is the radius
+//ctx.fill();
+ctx.stroke();
+
+*/
+
+ctx.font="Arial";
+ctx.fontSize="15px";
+ctx.fillText("hello",100,100);
+ctx.strokeText("hi",500,500);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PESUno</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="project.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="font-awesome.min.css">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="pro-top">
+ <ul class="pro-navbar pro-theme-d2 pro-left-align">
+  <li class="pro-hide-medium pro-hide-large pro-opennav pro-right">
+    <a class="pro-hover-white pro-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="Final_homepage.html" class="pro-teal"><i class="fa fa-home pro-margin-right"></i>PESUno</a></li>
+  <li class="pro-hide-small"><a href="about.html" class="pro-hover-white">About</a></li>
+  <li class="pro-hide-small"><a href="http://www.pes.edu/" class="pro-hover-white">PESU</a></li>
+ 
+  <li class="pro-hide-small"><a href="fests.html" class="pro-hover-white">Fests</a></li>
+  <li class="pro-hide-small pro-dropdown-hover">
+    <a href="clubs.html" title="Notifications">Clubs <i class="fa fa-caret-down"></i></a>
+    <div class="pro-dropdown-content pro-white pro-card-4">
+     <a href="#">IEEE</a>
+	  <a href="#">IET</a>
+      <a href="#">Ecell</a>
+      <a href="#">Pulse</a>
+      <a href="#">......</a>
+    </div>
+  </li>
+   <li class="pro-hide-small"><a href="gallery.html" class="pro-hover-white">Gallery</a></li>
+   <li class="pro-hide-small"><a href="#contact" class="pro-hover-white">Contact Us</a></li>
+  <li class="pro-hide-small pro-right"><a href="http://www.google.co.in" class="pro-hover-teal" title="Search"><i class="fa fa-search"></i></a></li>
+  <li class="pro-hide-small pro-right"><a href="signIn.html" class="pro-hover-teal" title="Login">Login</a></li>
+  <li class="pro-hide-small pro-right"><a href="login.html" class="pro-hover-teal" title="Sign Up">Sign Up</a></li>
+ </ul>
+
+  
+</div>
+<!-- Contact Container -->
+<div class="pro-container pro-padding-64 pro-theme-l5" id="contact">
+  <div class="pro-row">
+    <div class="pro-col m5">
+    <div class="pro-padding-16"><span class="pro-xlarge pro-border-teal pro-bottombar">Contact Us</span></div>
+    
+      <p><i class="fa fa-map-marker pro-text-teal pro-xlarge"></i>PES University, Bangalore</p>
+      <p><i class="fa fa-phone pro-text-teal pro-xlarge"></i>+91 9475628487</p>
+      <p><i class="fa fa-envelope-o pro-text-teal pro-xlarge"></i>pesuno@pes.edu</p>
+    </div>
+    <div class="pro-col m7">
+      <form class="pro-container pro-card-4 pro-padding-16 pro-white">
+      <div class="pro-group">
+        <label class="pro-label">Name</label>
+        <input class="pro-input" type="text">
+      </div>
+      <div class="pro-group">
+        <label class="pro-label">Email</label>
+        <input class="pro-input" type="text">
+      </div>
+      <div class="pro-group">
+        <label class="pro-label">Subject</label>
+        <input class="pro-input" type="text">
+      </div>
+      <button type="button" class="pro-btn pro-right pro-theme">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Google Maps -->
+<div id="googleMap" style="width:100%;height:420px;"></div>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(12.9348, 77.5371);
+
+function initialize() {
+var mapProp = {
+  center: myCenter,
+  zoom: 10,
+  scrollwheel: false,
+  draggable: true,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<!-- Footer -->
+<footer class="pro-container pro-padding-32 pro-theme-d1 pro-center">
+  <h4 align="center">Follow Us</h4>
+  <a class="pro-btn-floating pro-teal" href="https://www.facebook.com/" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="pro-btn-floating pro-teal" href="https://twitter.com/login?lang=en" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="pro-btn-floating pro-teal" href="https://plus.google.com/" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="pro-btn-floating pro-teal pro-hide-small" href="https://www.linkedin.com/uas/login" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="pro-tooltip pro-right">
+    <span class="pro-text pro-padding pro-teal pro-hide-small">Go To Top</span>
+    <a class="pro-btn pro-theme" href="#myPage"><span class="pro-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+</body>
+</html>
